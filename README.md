@@ -1,2 +1,4 @@
-# autoVersioning
-Demonstrates automated versioning of esp8266 arduino core / arduino software projects
+# Automated Version Number Generation
+This is a minimal esp8266 arduino core / arduino example that demonstrates a method to generate a version number for  software in an automated way.
+
+Everything is defined and setup in build_defs.h and it's pretty much self explanatory: the  **\__DATE__** and **\__TIME__** gcc preprocessor macros are used to build up a unique automated self incrementing version build number that can be used anywhere in a project. The given example includes a ready made const char TimestampedVersion[] definition that will build a version number from runtime project build date/time components that will end up looking like this: **1.140216.2041**
